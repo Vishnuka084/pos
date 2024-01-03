@@ -13,7 +13,7 @@ function App() {
         <nav className="navbar navbar-expand-lg bg-light">
           <div className="container-fluid">
             <div className="navbar-brand" >
-              <img src="https://th.bing.com/th/id/OIP.KQnzCHlObFW44Qsj4kBN9AHaGT?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              <img src="https://th.bing.com/th/id/OIP.PVqdsLU2RmQ7-XE6ZGZfjwHaDP?w=340&h=152&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                    alt="" className='logo'/>
             </div>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
