@@ -1,6 +1,9 @@
 import {BrowserRouter as Router, Routes,Route,Link} from "react-router-dom";
 import './App.css'
 import Home from "./components/Home.tsx";
+import Customer from "./components/Customer.tsx";
+import Product from "./components/Product.tsx";
+
 
 function App() {
 
@@ -25,9 +28,9 @@ function App() {
         <hr/>
 
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/customer' element={<Customer/>}></Route>
-          <Route path='/product' element={<Product/>}></Route>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/customer' element={<Customer/>}/>
+          <Route path='/product' element={<Product/>}/>
         </Routes>
 
       </div>
