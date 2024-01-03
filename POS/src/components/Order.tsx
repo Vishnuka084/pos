@@ -8,7 +8,12 @@ function  Order(){
         width:'100%',
         display:'flex',
         alignItems:'center',
-        justyfyContent:'space-between'
+        justifyContent:'space-between'
+
+    }
+    const totalText:React.CSSProperties={
+        color:'red',
+        margin:'0'
 
     }
 
@@ -126,7 +131,7 @@ function  Order(){
 
                         <div className="bottom-context" style={bottomContext}>
                             <div className="total-outer">
-                                <h1>
+                                <h1 style={totalText}>
                                     Total : 2500.00
                                 </h1>
                             </div>
