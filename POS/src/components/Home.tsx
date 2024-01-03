@@ -10,7 +10,7 @@ function  Home(){
                 <div className='row'>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                         <DefaultCard
-                            thumbnail='https://img.freepik.com/free-photo/medium-shot-people-shaking-hands_23-2149300663.jpg?size=626&ext=jpg&ga=GA1.2.32560783.1658732066&semt=sph'
+                            thumbnail='https://img.freepik.com/free-photo/businesspeople-having-discussion-office_107420-84849.jpg?size=626&ext=jpg&ga=GA1.2.32560783.1658732066&semt=sph'
                             description='This is a wider card with supporting text below as a natural '
                             title='customers'
                             value={250}
