@@ -3,7 +3,6 @@ import './App.css'
 import Home from "./components/Home.tsx";
 import Customer from "./components/Customer.tsx";
 import Product from "./components/Product.tsx";
-import React from "react";
 import Order from "./components/Order.tsx";
 
 
