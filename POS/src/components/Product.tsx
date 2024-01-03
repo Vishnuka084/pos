@@ -2,58 +2,61 @@ import React from "react";
 
 function  Product(){
     const styleObj:React.CSSProperties={
-        marginBottom:'540px'
+        marginBottom:'20px'
     }
 
     return (
         <>
             <br/>
-            <div className="container">
+            <div className='container'>
                 <div className="row">
                     <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
                         <div className="form-group">
                             <label htmlFor="productName">Product Name</label>
-                            <input value={name} type="text" onChange={(e)=>setName(e.target.value)} className='form-control' id='productName'/>
+                            <input type="text" className='form-control' id='productName'/>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
+                    <div className="col-12 col-sm-6 col-md-4">
                         <div className="form-group">
                             <label htmlFor="price">Unit Price</label>
-                            <input  value={unitPrice} onChange={(e)=>setUnitPrice(parseFloat(e.target.value))} type="number" className='form-control' id='price'/>
+                            <input type="text" className='form-control' id='price'/>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
+                    <div className="col-12 col-sm-6 col-md-4">
                         <div className="form-group">
-                            <label htmlFor="qty">QTY On Hand</label>
-                            <input value={qtyOnHand} onChange={(e)=>setQtyOnHand(parseFloat(e.target.value))} type="number" className='form-control' id='qty'/>
+                            <label htmlFor="qty">QTY on Hand</label>
+                            <input type="text" className='form-control' id='qty'/>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4" style={styleObj}>
+                    <div className="col-12 col-sm-6 col-md-4">
                         <div className="form-group">
-                            <label htmlFor="image">Product Image</label>
-                            <input onChange={handleImageChange}
-                                   type="file" className='form-control' id='image'/>
+                            <label htmlFor="image">Product Image </label>
+                            <input type="file" className='form-control' id='image'/>
                         </div>
                     </div>
-                    <div className="col-12">
+
+                    <div className="col-12 col-sm-6 col-md-4">
                         <div className="form-group">
-                            <label htmlFor="description">Description</label>
-                            <textarea value={description} onChange={(e)=>setDescription(e.target.value)}  rows={5} className='form-control' id='description'/>
+                            <label htmlFor="descriptions">Descriptions</label>
+                            <input  className='form-control' id='descriptions'/>
                         </div>
                     </div>
 
                 </div>
                 <br/>
+
                 <div className="row">
-                    <div className="col-12">
-                        <button className='btn btn-primary col-12' onClick={saveProduct}>Save Product</button>
+                    <div className="col-12 ">
+                        <button className='btn btn-primary col-12'>Save Customer</button>
                     </div>
+
                 </div>
+
                 <hr/>
                 <div className="row">
                     <div className="col-12">
                         <form className='col-12'>
-                            <input type="search" className='form-control' placeholder='Search Products here'/>
+                            <input type="search" className='form-control' placeholder='Search Customers here'/>
                         </form>
                     </div>
                 </div>
@@ -85,17 +88,8 @@ function  Product(){
                                 <td>
                                     <button className='btn btn-outline-success btn-sm'>Update</button>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>#1010</td>
-                                <td>Wimal Bandara</td>
-                                <td>Colombo city</td>
-                                <td>25000.00</td>
                                 <td>
-                                    <button className='btn btn-outline-danger btn-sm'>Delete</button>
-                                </td>
-                                <td>
-                                    <button className='btn btn-outline-success btn-sm'>Update</button>
+                                    <button className='btn btn-outline-info btn-sm'>View</button>
                                 </td>
                             </tr>
                             </tbody>
