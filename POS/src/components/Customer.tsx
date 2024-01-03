@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import axios from "axios";
 interface Customer{
     id:string,
     name:string,
@@ -15,9 +15,20 @@ const Customer:React.FC = ()=>{
 
 
     const saveCustomer = async ()=>{
-        console.log(name);
-        console.log(address);
-        console.log(salary);
+        try {
+
+            const response = await axios.post('http://localhost:3000/api/v1/customes/create',{
+                name, address, salary
+            });
+
+            console.log(response);
+            setName('');
+            setSalary('');
+            setAddress('');
+
+        }catch (e){
+            console.log(e)
+        }
     }
 
     return (
